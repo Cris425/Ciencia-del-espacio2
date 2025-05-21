@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    overflow: auto;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .tituloprincipal {
+        display: flex;
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: max-content;
+        margin-bottom: 0;
+        background-color: rgba(128, 128, 128, 0.103);
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        margin-top: 0;
+        order: 1
+      }
+      
+      .fondovideo {
+            
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .contenido {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+      }
+      .navinicio {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.349);
+        text-decoration: none;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        z-index: 2;
+        padding: 10px;
+      }
+      nav {
+        display: flex;
+        z-index: 2;
+        justify-content: space-around;
+      }
+      .navinicio:hover {
+        background-color: rgb(0, 0, 0);
+      }
+      .navinicio:active {
+        color: blue;
+      }
+      h3 {
+        color:white;
+        z-index: 2;
+      }
+      .subtitulo {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        z-index: 2;
+      }
+      p {
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgba(0, 0, 0, 0.582);
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .fraseinicio {
+        display: flex;
+        justify-content: center;
+      }
+      .galeria {
+display: flex;
+justify-content: center;
+gap: 40px;
+margin: 50px 0;
+z-index: 2;
+position: relative;
+flex-wrap: wrap;
+}
+
+.imagen-bloque {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+color: white;
+max-width: 200px;
+}
+
+.imagen-enlace {
+width: 200px;
+height: auto;
+border: 2px solid white;
+border-radius: 10px;
+cursor: pointer;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-enlace:hover {
+transform: scale(1.05);
+box-shadow: 0 0 15px white;
+}
+
+.descripcion-imagen {
+margin-top: 10px;
+font-size: 16px;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 5px;
+}
+.imagen-enlace2:hover {
+transform: scale(1.05);
+box-shadow: 0 0 15px white;
+}
+      @media (max-width:600px) {
+        .tituloprincipal {
+          display: block;
+          font-size: 50px;
+        }
+        nav {
+          flex-direction: column;
+          display: block;
+        }
+      }
